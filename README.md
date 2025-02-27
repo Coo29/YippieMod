@@ -5,3 +5,8 @@ An in progress mod for balatro, (hopefully) adding various things!
 
 Currently added:
 1 Joker
+
+
+# How to install:
+
+Download the mod from the Main, or from the releases tab. Once downloaded, unzip the Yippie.zip folder, and place the extracted folder inside your mods folder. That's it!
