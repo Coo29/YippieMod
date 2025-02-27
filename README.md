@@ -14,5 +14,7 @@ Download the mod from the Main, or from the releases tab. Once downloaded, unzip
 # Credits
 
 Art: Coo29
+
 Programming: Coo29
+
 SFX: Coo29 (yippie sound modified from the original youtube video by Bavaklava)
