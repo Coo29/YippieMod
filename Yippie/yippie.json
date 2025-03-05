@@ -2,7 +2,7 @@
     "id": "Yippie",
     "name": "Yippie",
     "author": ["Coo29"],
-    "description": "Just testing to see if I can make a custom joker",
+    "description": "Yippie! Currently adds 2 new jokers",
     "prefix": "Coo29",
     "main_file": "yippie.lua",
     "badge_colour": "10a8c7",
@@ -10,5 +10,5 @@
     "dependencies": [
         "Steamodded (>=1.0.0~ALPHA-1225a)"
     ],
-    "version": "1.0.0"
+    "version": "0.0.4"
 }
