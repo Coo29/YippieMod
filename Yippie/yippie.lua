@@ -250,8 +250,8 @@
          loc_txt = {
              name = 'Monch',
              text = {
-                 "remove {C:chips}#1#{} chips from played",
-                 "hand, gain {X:mult,C:white}X#2#{} Mult.",
+                 "{C:chips}-#1#{} Chips,",
+                 "{X:mult,C:white}X#2#{} Mult.",
              }
          },
  
@@ -262,8 +262,8 @@
                  Xmult = 3
           }
       },
-             -- rarity level, 0 = common, 1 = uncommon, 2 = rare, 3 = legendary.
-         rarity = 1,
+             -- rarity level, 1 = common, 2 = uncommon, 3 = rare, 4 = legendary.
+         rarity = 3,
  
              -- atlas the joker uses for texture(s).
          atlas = 'Coo29',
