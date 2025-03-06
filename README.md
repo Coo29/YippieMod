@@ -1,4 +1,5 @@
 # YippieMod
+![thumbnail](https://github.com/user-attachments/assets/2d2cd011-864c-483b-903f-2173ce2fdbcb)
 An in progress mod for balatro, (hopefully) adding various things!
 
 (Requires Steamodded, untested on versions prior to v1.0.0~ALPHA-1424a)
@@ -18,3 +19,4 @@ Art: Coo29
 Programming: Coo29
 
 SFX: Coo29 (yippie sound modified from the original youtube video by Bavaklava)
+
