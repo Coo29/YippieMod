@@ -151,7 +151,7 @@
  
             -- description of the joker.
          loc_txt = {
-             name = 'Possom',
+             name = 'Possum',
              text = {
                  "Gives {C:money}$#1#{} at end of round,",
                  "increases by {C:money}$#2#{} per round.",
