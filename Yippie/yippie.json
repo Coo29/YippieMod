@@ -4,7 +4,7 @@
     "author": ["Coo29"],
     "description": "Yippie! Currently adds 3 new jokers",
     "prefix": "Coo29",
-    "main_file": "yippie.lua",
+    "main_file": "core.lua",
     "badge_colour": "10a8c7",
     "display_name": "Yippie",
     "dependencies": [
