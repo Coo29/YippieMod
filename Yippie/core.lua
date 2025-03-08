@@ -61,4 +61,11 @@ path = "possom.png",  -- name of the file the joker textures are located in.
 px = 71,
 py = 95
 }
+
 --Atlas Junk End
+
+--Shader Stuff Start
+
+SMODS.Shader {key = 'specdeck', path = 'specdeck.fs',}
+
+--Shader Stuff End
