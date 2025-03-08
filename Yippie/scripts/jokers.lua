@@ -226,7 +226,7 @@
              y = 0
          },
              -- cost of the joker in the shop.
-         cost = 0,
+         cost = 8,
  
              -- whether it is unlocked by default.
          unlocked = true,
@@ -271,7 +271,8 @@
                             card.ability.extra.chips
                         },
                     },
-                    chips = G.GAME.current_round.current_hand.chips - card.ability.extra.chips - G.GAME.current_round.current_hand.chips,
+                    -- chips = G.GAME.current_round.current_hand.chips - card.ability.extra.chips - G.GAME.current_round.current_hand.chips,
+                    chips =- card.ability.extra.chips,
 
                      message  = localize {
                          type = 'variable',
