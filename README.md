@@ -6,6 +6,7 @@ An in progress mod for balatro, (hopefully) adding various things!
 
 Currently added:
 3 Jokers
+
 1 Deck
 
 
