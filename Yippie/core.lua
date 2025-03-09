@@ -22,7 +22,7 @@ SMODS.Sound:register_global() -- used to import the sound effect
 
 --Atlas Junk start
 
-SMODS.Atlas { -- atlas for the joker texture.
+SMODS.Atlas { -- atlas for the joker textures.
        
     key = "Coo29",  -- key it uses to call the correct sheet later on.
       
@@ -51,7 +51,7 @@ SMODS.Atlas { -- icon for the modpack as shown in the mods menu.
    py = 32
 }
 
-SMODS.Atlas { -- atlas for the joker texture.
+SMODS.Atlas { -- atlas for the possom texture.
        
 key = "possom",  -- key it uses to call the correct sheet later on.
   
@@ -62,10 +62,19 @@ px = 71,
 py = 95
 }
 
+SMODS.Atlas { -- atlas for the minmoo texture.
+       
+key = "minmoo",  -- key it uses to call the correct sheet later on.
+  
+path = "minmoo.png",  -- name of the file the joker textures are located in.
+
+-- size of the individual joker textures in the file. (71x95 is default)
+px = 71,
+py = 95
+}
+
 --Atlas Junk End
 
 --Shader Stuff Start
-
-SMODS.Shader {key = 'specdeck', path = 'specdeck.fs',}
 
 --Shader Stuff End

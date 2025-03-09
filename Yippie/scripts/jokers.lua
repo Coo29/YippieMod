@@ -290,33 +290,36 @@
          
         }
 
---[[    SMODS.Joker { -- test4 --
-        key = 'test4',
+    SMODS.Joker { -- minmoo --
+        key = 'minmoo',
  
             -- description of the joker.
          loc_txt = {
-             name = 'Test 4',
+             name = 'Minmoo',
              text = {
-                 "{C:attention}Test Joker{}",
+                 "Gain {C:chips}+#1#{} Chips",
+                 "every time a {C:mult}Heart{}",
+                 "card is scored.",
+                 "(Currently {C:chips}+#2#{} Chips)",
              }
          },
  
             -- config of the joker. Variables go here.
          config = {
             extra = {
-                 x = 0,
-                 y = 0
+                chip_mod = 2,
+                chips = 00,
           }
       },
-             -- rarity level, 0 = common, 1 = uncommon, 2 = rare, 3 = legendary.
+             -- rarity level, 1 = common, 2 = uncommon, 3 = rare, 4 = legendary.
          rarity = 1,
  
              -- atlas the joker uses for texture(s).
-         atlas = 'Coo29',
+         atlas = 'minmoo',
      
              -- where on the atlas texture the joker is locarted.
          pos = {
-             x = 3,
+             x = 0,
              y = 0
          },
              -- cost of the joker in the shop.
@@ -346,53 +349,42 @@
              return {
                  vars = {
                          -- #1#
-                     card.ability.extra.x,
+                    card.ability.extra.chip_mod,
                          -- #2#
-                     card.ability.extra.y,
+                    card.ability.extra.chips,
                      }
                  }
          end,
  
-         --[[
              -- calculate is where the scoring and effects of the joker are handled. 
          calculate = function(self, card, context)
                  -- context.joker_main takes place when the joker is meant to score.
              if context.joker_main then
                  return {
-                         -- adds the number contained in the mult variable to the score.
-                 mult_mod = card.ability.extra.mult,
+                         -- adds the number contained in the chips variable to the score.
+                 chip_mod = card.ability.extra.chips,
                          -- message is the text that appears when the joker scores.
                          -- localize is used to make sure the text works across multiple languages.
                      message  = localize {
                          type = 'variable',
-                         key = 'a_mult',
+                         key = 'a_chips',
                          vars = {
-                             card.ability.extra.mult
+                             card.ability.extra.chips,
                          }
                      }
                  }
              end
-                 -- context.after takes place after the hand is scored.
-                 -- context.blueprint applies if the joker is a blueprint copy.
-             if context.after and not context.blueprint then
-                             -- adds the gain variable to the base mult number.
-                         card.ability.extra.mult = card.ability.extra.mult + card.ability.extra.gain
-                     return {
-                             -- another message, just prints the text.
-                         message = "Yippie!",
-                         colour = G.C.MULT,
-                             -- plays the sound effect yippie.ogg. the prefix is needed.
-                         play_sound("Coo29_yippie"),
-                             -- needed, can be changed to context.other_card to apply to another card.
-                         card = card
-                     }
+
+             if context.individual and context.cardarea == G.play then
+                if context.other_card:is_suit('Hearts') then
+                        card.ability.extra.chips = card.ability.extra.chips + card.ability.extra.chip_mod                  
+                end
              end
          end
-
          
          
      }
-]]
+     
 --[[    SMODS.Joker { -- test5 --
         key = 'test5',
  

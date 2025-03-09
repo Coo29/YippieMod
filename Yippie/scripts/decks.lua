@@ -35,6 +35,8 @@ SMODS.Back{ --test deck 1
         }}
     end,
 
+
+   --[[ 
 SMODS.DrawStep { -- shader stuff, currently broken.
         layer = 'card',
         key = 'spectral',
@@ -52,6 +54,7 @@ SMODS.DrawStep { -- shader stuff, currently broken.
         end,
         conditions = {facing = 'back'}
     }
+    --]]
 
 }
     
