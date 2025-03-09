@@ -375,7 +375,7 @@
                  }
              end
 
-             if context.individual and context.cardarea == G.play then
+             if context.individual and context.cardarea == G.play and not context.blueprint then
                 if context.other_card:is_suit('Hearts') then
                         card.ability.extra.chips = card.ability.extra.chips + card.ability.extra.chip_mod                  
                 end
